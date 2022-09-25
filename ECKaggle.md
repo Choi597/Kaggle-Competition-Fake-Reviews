@@ -155,9 +155,6 @@ for C in [10]:
     validationy_hat = lr.predict_proba(valData)[:,1]
     accuracy = roc_auc_score(file_validation['real review?'], validationy_hat)
     
-   
-    
-
     #accuracy = (yval_pred == file_validation['real review?']).sum() / file_validation['real review?'].size
     print(f'Accuracy {accuracy}')
     #print(f'Fraction of non-zero model parameters {np.sum(lr.coef_==0)+1}')
