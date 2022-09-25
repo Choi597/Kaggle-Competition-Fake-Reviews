@@ -1,14 +1,5 @@
-Fake Reviews:
-The training and validation datasets are similar (independent samples from the same P(Y,X) distribution). The test data labels "real review?" are all wrong (-1). 
-Task: Correctly classify a review as real or fake given its characteristics. Each row contains a review. A review is characterized by:
-A review label (1 for real reviews and 0 for fake reviews).
-Category of the item.
-Star rating.
-Review text (variable-size).
+Logistic Regression Model and Task Summary:
 
+<img width="671" alt="Screen Shot 2022-09-25 at 6 05 41 PM" src="https://user-images.githubusercontent.com/54754292/192167670-5dcb7e94-688c-4bf7-af20-e52bc0cd1d1b.png">
 
-Fake Reviews Task: Given the reviews, ratings, and category of different items, use predictive modeling to determine whether the review is real or fabricated.
-
-Fake Reviews Dataset: We are given 3 Datasets (Reviews_Train, Reviews_Validation, Reviews_Test_Attributes). Reviews_Test_Attributes has 2249 Observations/rows and 5 columns, Reviews_Train has 37,200 Observations/Rows and 4 columns, and Reviews_Validation has 999 Observations/Rows and 4 columns
-
-Knowledge Representation: I used Logistic Regression, a Binary Classification algorithm used to classify categorical variables into exactly two classes. This would be appropriate here; Since we are categorizing reviews as either real or fake, we would need to assign a label (real/fake) to each entity in the test set given a training set with labeled entities. As a result, knowledge Representation would be Two Classes, labeled (y=0 and y=1).
+<img width="715" alt="Screen Shot 2022-09-25 at 6 07 02 PM" src="https://user-images.githubusercontent.com/54754292/192167706-9c360eab-979d-4d86-9b0d-ff20b6b0e0b2.png">
